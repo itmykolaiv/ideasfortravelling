@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="ideasForTravelling.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="hotelClass">
+            <p><b>Hotel class</b></p>
+            <form>
+                <input type="radio" name="hotelClass" class="hotelClass" value="1*"/> <lable>1*</lable><br>
+                <input type="radio" name="hotelClass" class="hotelClass" value="2*"/> <lable>2*</lable><br>
+                <input type="radio" name="hotelClass" class="hotelClass" value="3*"/> <lable>3*</lable><br>
+                <input type="radio" name="hotelClass" class="hotelClass" value="4*"/> <lable>4*</lable><br>
+                <input type="radio" name="hotelClass" class="hotelClass" value="5*"/> <lable>5*</lable><br>
+                <input type="radio" name="hotelClass" class="hotelClass" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
+            </form> 
+        </div>
+        <div class="roomClass">
+            <p><b>Room class</b></p>
+            <form>
+                <input type="radio" name="roomClass" class="roomClass" value="budgetary"/> <lable>Budgetary</lable><br>
+                <input type="radio" name="roomClass" class="roomClass" value="standart"/> <lable>Standart</lable><br>
+                <input type="radio" name="roomClass" class="roomClass" value="luxe"/> <lable>Luxe</lable><br>
+                <input type="radio" name="roomClass" class="roomClass" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
+            </form>
+        </div>
+        <div class="roomCost">
+            <p><b>Room cost</b></p>
+            <form>
+                <lable>From</lable> 
+                <input type="number" min="0" max="999999" class="roomCostFrom" maxlength="6" size="6" value="0"/>
+                <lable>uah</lable>
+                <lable>to</lable> 
+                <input type="number" min="0" max="999999" class="roomCostTo" maxlength="6" size="6" value="0"/>
+                <lable>uah</lable>
+            </form>    
+        </div>
+        <div class="standardAmenities">
+            <p><b>Standard amenities</b></p>
+            <div class="taww">
+                <p>TV/Air condition/Wi-Fi/Water pool</p>
+                <form>
+                    <input type="checkbox" name="tV" class="tV" value="tV"/> <lable>TV</lable><br>
+                    <input type="checkbox" name="airCondition" class="airCondition" value="airCondition"/> <lable>Air condition</lable><br>
+                    <input type="checkbox" name="wiFi" class="wiFi" value="wiFi"/> <lable>Wi-Fi</lable><br>
+                    <input type="checkbox" name="waterPool" class="waterPool" value="waterPool"/> <lable>Water pool</lable><br>
+                </form>
+            </div>
+            <div class="shower">
+                <p>Shower</p>
+                <form>
+                    <input type="radio" name="shower" class="shower" value="inRoom"/> <lable>In room</lable><br>
+                    <input type="radio" name="shower" class="shower" value="onTheFloor"/> <lable>On the floor</lable><br>
+                    <input type="radio" name="shower" class="shower" value="inTheTerritory"/> <lable>In the territory</lable><br>
+                    <input type="radio" name="shower" class="shower" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
+                </form>    
+            </div>
+            <div class="wC">
+                <p>WC</p>
+                <form>
+                    <input type="radio" name="wC" class="wC" value="inRoom"/> <lable>In room</lable><br>
+                    <input type="radio" name="wC" class="wC" value="onTheFloor"/> <lable>On the floor</lable><br>
+                    <input type="radio" name="wC" class="wC" value="inTheTerritory"/> <lable>In the territory</lable><br>
+                    <input type="radio" name="wC" class="wC" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
+                </form>    
+            </div>
+        </div>    
+        <div class="opportunityToEat">
+            <p><b>Opportunity to eat</b></p>
+            <form>
+                <input type="radio" name="opportunityToEat" class="opportunityToEat" value="bar"/> <lable>Bar</lable><br>
+                <input type="radio" name="opportunityToEat" class="opportunityToEat" value="restoraunt"/> <lable>Restoraunt</lable><br>
+                <input type="radio" name="opportunityToEat" class="opportunityToEat" value="diningRoom"/> <lable>Dining room</lable><br>
+                <input type="radio" name="opportunityToEat" class="opportunityToEat" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
+            </form>
+        </div>
+        <div class="parkingPlace">
+            <p><b>Parking place</b></p>
+            <form>
+                <input type="radio" name="parkingPlace" class="parkingPlace" value="Paid"/> <lable>Paid</lable><br>
+                <input type="radio" name="parkingPlace" class="parkingPlace" value="notPaid"/> <lable>Not paid</lable><br>
+                <input type="radio" name="parkingPlace" class="parkingPlace" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
+            </form>
+        </div>    
+        <div class="aTM">
+            <p><b>ATM</b></p>
+            <form>
+                <input type="radio" name="ATM" class="aTM" value="In the territory"/> <lable>In the territory</lable><br>
+                <input type="radio" name="ATM" class="aTM" value="Nearby"/> <lable>Nearby</lable><br>
+                <input type="radio" name="ATM" class="aTM" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
+            </form> 
+        </div>
+        <div class="distanceToTheSea">
+            <p><b>Distance to the sea</b></p>
+            <form>
+                <input type="radio" name="distanceToTheSea" class="distanceToTheSea" value="firstLane"/> <lable>First lane</lable><br>
+                <input type="radio" name="distanceToTheSea" class="distanceToTheSea" value="secondLane"/> <lable>Second lane</lable><br>
+                <input type="radio" name="distanceToTheSea" class="distanceToTheSea" value="thirdLane"/> <lable>Third lane</lable><br>
+                <input type="radio" name="distanceToTheSea" class="distanceToTheSea" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
+            </form>
+        </div>
+        <div class="waterParkDolphinarium">
+            <p><b>Water park/Dolphinarium nearby</b></p>
+            <form>
+                <input type="checkbox" name="waterPark" class="waterPark" value="waterPark"/> <lable>Water park</lable><br>
+                <input type="checkbox" name="dolphinarium" class="dolphinarium" value="dolphinarium"/> <lable>Dolphinarium</lable><br>
+            </form>    
+        </div>
+        <div class="findHotels">
+            <form>
+                <input id="filter-btn" type="button" value="Filter"/>
+            </form>
+        </div>
+        <div id="hotels">
+            <div  class="hotel">
+                <div class="hotel_image">
+                    <img src="{{image}}" />
+                </div>
+                <div class="hotel_description">
+                    <h3>{{name}}</h3>
+                    <p>{{link}}</p>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div id="list"></div>
+        <script src="ideasForTravelling.js" type="text/javascript"></script>
+        <script src="filter.js" type="text/javascript"></script>
+    </body>
+</html>
