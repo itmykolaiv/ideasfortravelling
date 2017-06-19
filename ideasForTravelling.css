@@ -7,3 +7,6 @@ and open the template in the editor.
     Created on : 04.06.2017, 16:22:17
     Author     : Ася
 */
+.hotel_description {
+    display: none;
+}

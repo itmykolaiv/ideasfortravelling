@@ -15,7 +15,13 @@ document.querySelector('#filter-btn').addEventListener('click', function () {
         block = block.replace("{{name}}", element.name)
                 .replace("{{image}}", element.image)
                 .replace("{{link}}", element.link);
-        list.innerHTML += block;
+        var temp = document.createElement('div');
+        temp.innerHTML = block;
+        temp.querySelector('.more_btn').addEventListener('click', function(){
+            //alert(1);
+            temp.querySelector('.hotel_description').style.display = 'block';
+        });
+        list.appendChild (temp);
     });
 });
 
