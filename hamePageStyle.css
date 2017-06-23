@@ -4,15 +4,9 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 04.06.2017, 16:22:17
+    Created on : 22.06.2017, 23:31:15
     Author     : Ася
 */
-.hotel_description {
-    display: none;
-}
-#hotels {
-    display: none;
-}
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Pacifico');
 html {
   height:100%;
@@ -90,4 +84,10 @@ section.content {
   max-width:800px;
   margin: 0 auto;
   min-width: 600px;
+}
+
+.content img {
+  vertical-align: top;
+  float:left;
+  margin: 0px 10px 0px 0px;
 }

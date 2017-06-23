@@ -14,7 +14,20 @@ document.querySelector('#filter-btn').addEventListener('click', function () {
         var block = hotels.innerHTML;
         block = block.replace("{{name}}", element.name)
                 .replace("{{image}}", element.image)
-                .replace("{{link}}", element.link);
+                .replace("{{link}}", element.link)
+                .replace("{{hotelClass}}", element.hotelClass)
+                .replace("{{roomType}}", element.roomClass.reduce(function(previousValue, current){
+                    //alert (current.type);
+                    return (previousValue + current.type + " = " + current.cost + " uah" + ", " );
+                },""))
+                .replace("{{standardAmenitiesTV}}", (element.standardAmenities[0].tV)?"TV: is present":"TV: isn't present" )
+                .replace("{{standardAmenitiesAirCondition}}", (element.standardAmenities[0].airCondition)?"Air condition: is present":"Air condition: isn't present" )
+                .replace("{{standardAmenitiesWiFi}}", (element.standardAmenities[0].wiFi)?"Wi-Fi: is present":"Wi-Fi: isn't present" )
+                .replace("{{standardAmenitiesWaterPool}}", (element.standardAmenities[0].waterPool)?"Water pool: is present":"Water pool: isn't present" )
+                .replace("{{shower}}", element.standardAmenities[0].shower)
+                .replace("{{wC}}", element.standardAmenities[0].wC)
+                .replace("{{parkingPlace}}", element.parkingPlace)
+                .replace("{{distanceToTheSea}}", element.distanceToTheSea);
         var temp = document.createElement('div');
         temp.innerHTML = block;
         temp.querySelector('.more_btn').addEventListener('click', function(){
