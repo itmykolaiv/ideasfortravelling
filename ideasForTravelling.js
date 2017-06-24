@@ -44,7 +44,7 @@ var recreationCenters = [
             {type:"standart",
              cost:"600"}],
         standardAmenities:[
-           {tV: true,
+           {tV: true, //help me
             airCondition: true,
             shower:"inRoom",
             wC:"inRoom",
@@ -68,6 +68,7 @@ var recreationCenters = [
             {type:"standart",
              cost:"3000"},
             {type:"luxe",
+                //help olen`y
              cost:"6000"}],
         standardAmenities:[
            {tV: true,
