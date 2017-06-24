@@ -6,7 +6,7 @@
 
 var hotels = document.querySelector('#hotels');
 var list = document.querySelector('#list');
-
+var flag = false;
 document.querySelector('#filter-btn').addEventListener('click', function () {
     list.innerHTML = "";
     var hotels_filtered = filterHotels();
@@ -31,8 +31,12 @@ document.querySelector('#filter-btn').addEventListener('click', function () {
         var temp = document.createElement('div');
         temp.innerHTML = block;
         temp.querySelector('.more_btn').addEventListener('click', function(){
-            //alert(1);
-            temp.querySelector('.hotel_description').style.display = 'block';
+            flag = !flag;
+            if (flag == true){
+                temp.querySelector('.hotel_description').style.display = 'block';
+            } else {
+                temp.querySelector('.hotel_description').style.display = 'none';
+            }
         });
         list.appendChild (temp);
     });
