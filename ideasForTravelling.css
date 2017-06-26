@@ -104,9 +104,9 @@ section.content {
     height: 350px;
 }
 .more_btn{
-    width:80%;
-    height:30%;
-    background-color: red;
-    color: #green;
+    width:100px;
+    height:40px;
+    background-color: #00CED1;
+    color: black;
     font-family: 'Indie Flower', cursive;
 }
