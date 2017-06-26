@@ -9,7 +9,7 @@ and open the template in the editor.
         <title>IFT-Find hotel</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="ideasForTravelling.css" rel="stylesheet" type="text/css"/>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="page">
@@ -28,6 +28,7 @@ and open the template in the editor.
             <section class='content'>
                 <section>
             <div class="calkulator">
+                <div class="part1">
                 <div class="hotelClass">
                     <p><b>Hotel class</b></p>
                     <form>
@@ -59,6 +60,33 @@ and open the template in the editor.
                         <lable>uah</lable>
                     </form>    
                 </div>
+                <div class="opportunityToEat">
+                    <p><b>Opportunity to eat</b></p>
+                    <form>
+                        <input type="radio" name="opportunityToEat" class="opportunityToEat" value="bar"/> <lable>Bar</lable><br>
+                        <input type="radio" name="opportunityToEat" class="opportunityToEat" value="restoraunt"/> <lable>Restoraunt</lable><br>
+                        <input type="radio" name="opportunityToEat" class="opportunityToEat" value="diningRoom"/> <lable>Dining room</lable><br>
+                        <input type="radio" name="opportunityToEat" class="opportunityToEat" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
+                    </form>
+                </div>
+                <div class="parkingPlace">
+                    <p><b>Parking place</b></p>
+                    <form>
+                        <input type="radio" name="parkingPlace" class="parkingPlace" value="Paid"/> <lable>Paid</lable><br>
+                        <input type="radio" name="parkingPlace" class="parkingPlace" value="notPaid"/> <lable>Not paid</lable><br>
+                        <input type="radio" name="parkingPlace" class="parkingPlace" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
+                    </form>
+                </div>    
+                <div class="aTM">
+                    <p><b>ATM</b></p>
+                    <form>
+                        <input type="radio" name="ATM" class="aTM" value="In the territory"/> <lable>In the territory</lable><br>
+                        <input type="radio" name="ATM" class="aTM" value="Nearby"/> <lable>Nearby</lable><br>
+                        <input type="radio" name="ATM" class="aTM" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
+                    </form> 
+                </div>    
+                </div>
+                <div class="part2">
                 <div class="standardAmenities">
                     <p><b>Standard amenities</b></p>
                     <div class="taww">
@@ -88,31 +116,6 @@ and open the template in the editor.
                             <input type="radio" name="wC" class="wC" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
                         </form>    
                     </div>
-                </div>    
-                <div class="opportunityToEat">
-                    <p><b>Opportunity to eat</b></p>
-                    <form>
-                        <input type="radio" name="opportunityToEat" class="opportunityToEat" value="bar"/> <lable>Bar</lable><br>
-                        <input type="radio" name="opportunityToEat" class="opportunityToEat" value="restoraunt"/> <lable>Restoraunt</lable><br>
-                        <input type="radio" name="opportunityToEat" class="opportunityToEat" value="diningRoom"/> <lable>Dining room</lable><br>
-                        <input type="radio" name="opportunityToEat" class="opportunityToEat" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
-                    </form>
-                </div>
-                <div class="parkingPlace">
-                    <p><b>Parking place</b></p>
-                    <form>
-                        <input type="radio" name="parkingPlace" class="parkingPlace" value="Paid"/> <lable>Paid</lable><br>
-                        <input type="radio" name="parkingPlace" class="parkingPlace" value="notPaid"/> <lable>Not paid</lable><br>
-                        <input type="radio" name="parkingPlace" class="parkingPlace" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
-                    </form>
-                </div>    
-                <div class="aTM">
-                    <p><b>ATM</b></p>
-                    <form>
-                        <input type="radio" name="ATM" class="aTM" value="In the territory"/> <lable>In the territory</lable><br>
-                        <input type="radio" name="ATM" class="aTM" value="Nearby"/> <lable>Nearby</lable><br>
-                        <input type="radio" name="ATM" class="aTM" value="Does not matter" checked=""/> <lable>Does not matter</lable><br>
-                    </form> 
                 </div>
                 <div class="distanceToTheSea">
                     <p><b>Distance to the sea</b></p>
@@ -130,6 +133,8 @@ and open the template in the editor.
                         <input type="checkbox" name="dolphinarium" class="dolphinarium" value="dolphinarium"/> <lable>Dolphinarium</lable><br>
                     </form>    
                 </div>
+                </div>
+                <div style="clear: both"></div>
                 <div class="findHotels">
                     <form>
                         <input id="filter-btn" type="button" value="Filter"/>
@@ -138,7 +143,7 @@ and open the template in the editor.
                 <div id="hotels">
                     <div  class="hotel">
                         <div class="hotel_image">
-                            <a href="{{link}}"><h4>{{name}}</h4></a><br>
+                            <a href="{{link}}"><h1>{{name}}<h1></a><br>
                             <img id ="kartinochka" src="{{image}}"/>
                         </div>
                         <div><button class="more_btn"><center>More...</center></button></div>
@@ -158,6 +163,7 @@ and open the template in the editor.
                         </div>
                     </div>
                     <div style="clear:both"></div>
+                    <div class="line"></div>
                 </div>
                 <div id="list"></div>
             </div>

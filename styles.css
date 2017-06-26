@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04.06.2017, 16:22:17
+    Author     : Ася
+*/
+.hotel_description {
+    display: none;
+}
+#hotels {
+    display: none;
+}
+html {
+  /*height:100%;*/
+}
+nav ul {
+  float:right;
+  margin-top: 40px;
+}
+
+nav .logo {
+  float: left;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  font-size: 18pt;
+}
+
+.logo img {
+   vertical-align: middle; 
+}
+
+body {
+  margin:0;
+  padding:0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  /*height:100%;*/
+  background-image: url(OQI7ZM0.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: #00b7d0;
+}
+nav ul::after, nav::after {
+  content:"";
+  clear:both;
+  display: block;
+}
+
+header {
+  padding: 20px;
+}
+
+nav li:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+nav li {
+  float:left;
+  list-style:none;
+  padding:10px;
+  background-color: rgba(0,0,0,0.3);
+  color: #fff;
+  transition-duration: 1.5s;
+}
+footer {
+  padding:20px;
+  margin:0px 20px 20px 20px;
+  background-color: rgba(0,0,0,0.3);
+  text-align: center;
+  color: #fff;
+  font-family: 'Patrick Hand SC', cursive;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+nav a:hover,nav li:hover a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+section.content {
+  padding:20px;
+  margin:20px 20px 0px 20px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.page {
+  max-width:800px;
+  margin: 0 auto;
+  min-width: 600px;
+}
+
+.page::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.content img {
+  vertical-align: top;
+  float:left;
+  margin: 0px 10px 0px 0px;
+}
+#kartinochka {
+    width: 700px;
+    height: 350px;
+    margin-top: 3px;
+    border: cadetblue double 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+}
+.more_btn{
+    width:100px;
+    height:40px;
+    background-color: #00CED1;
+    color: black;
+    border: 3px cadetblue double;
+    font-size: large;
+    margin-top: 15px;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 12px;
+}
+#filter-btn {
+    width:100px;
+    height:40px;
+    background-color: #00CED1;
+    color: black;
+    border: 3px cadetblue double;
+    font-family: 'Indie Flower', cursive;
+    font-size: large;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 40%;
+    border-radius: 12px;
+}
+.line {
+    height: 5px;
+    border-bottom: 10px solid #00b7d0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+.part1 {
+    float: left;
+    width: 50%;
+}
+.part2 {
+    float: left;
+    width: 50%;
+}
