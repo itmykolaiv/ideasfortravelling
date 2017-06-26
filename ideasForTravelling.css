@@ -102,11 +102,25 @@ section.content {
 #kartinochka {
     width: 700px;
     height: 350px;
+    margin-top: 3px;
+    border: cadetblue double 4px;
 }
 .more_btn{
     width:100px;
     height:40px;
     background-color: #00CED1;
     color: black;
+    border: 3px cadetblue double;
+    font-size: large;
     font-family: 'Indie Flower', cursive;
+}
+#filter-btn {
+    width:100px;
+    height:40px;
+    background-color: #00CED1;
+    color: black;
+    border: 3px cadetblue double;
+    font-family: 'Indie Flower', cursive;
+    font-size: large;
+    margin-top: 15px;
 }
