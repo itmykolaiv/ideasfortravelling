@@ -70,7 +70,7 @@ nav li {
 }
 footer {
   padding:20px;
-  margin:0px 20px 20px 20px;
+  margin:0px 10px 10px 10px;
   background-color: rgba(0,0,0,0.3);
   text-align: center;
   color: #fff;
@@ -87,8 +87,9 @@ nav a:hover,nav li:hover a {
 
 section.content {
   padding:20px;
-  margin:20px 20px 0px 20px;
+  margin:10px 10px 0px 10px;
   background-color: rgba(255,255,255,0.8);
+  font-size: large;
 }
 
 .page {
