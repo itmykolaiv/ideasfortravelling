@@ -44,7 +44,7 @@ body {
   background-image: url(OQI7ZM0.jpg);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: 100% auto;
   background-color: #00b7d0;
 }
 nav ul::after, nav::after {
