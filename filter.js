@@ -56,14 +56,14 @@ function filterHotels() {
         }
         //аквапарк или дельфинариум(часть аквапарка)
         var waterPark = document.querySelectorAll('.waterPark:checked');
-        if (waterPark[0]!= undefined && waterPark[0].value == "waterPark"){
+        if (waterPark[0]!== undefined && waterPark[0].value == "waterPark"){
             if (!element.waterPark){
                 return false;
             }
         }
         //аквапарк или дельфинариум(часть дельфинариума)
         var dolphinarium = document.querySelectorAll('.dolphinarium:checked');
-        if (dolphinarium[0]!= undefined && dolphinarium[0].value == "dolphinarium"){
+        if (dolphinarium[0]!== undefined && dolphinarium[0].value == "dolphinarium"){
             if (!element.dolphinarium){
                 return false;
             }
@@ -77,21 +77,21 @@ function filterHotels() {
         }
         //стандартные удобства (часть кондиционера-чекбокс)
         var airCondition = document.querySelectorAll('.airCondition:checked');
-        if (airCondition[0]!= undefined && airCondition[0].value == "airCondition"){
+        if (airCondition[0]!== undefined && airCondition[0].value == "airCondition"){
             if (!element.standardAmenities[0].airCondition){
                 return false;
             }
         }
         //стандартные удобства (часть вай-фая-чекбокс)
         var wiFi = document.querySelectorAll('.wiFi:checked');
-        if (wiFi[0]!= undefined && wiFi[0].value == "wiFi"){
+        if (wiFi[0]!== undefined && wiFi[0].value == "wiFi"){
             if (!element.standardAmenities[0].wiFi){
                 return false;
             }
         }
         //стандартные удобства (часть бассейна-чекбокс)
         var waterPool = document.querySelectorAll('.waterPool:checked');
-        if (waterPool[0]!= undefined && waterPool[0].value == "waterPool"){
+        if (waterPool[0]!== undefined && waterPool[0].value == "waterPool"){
             if (!element.standardAmenities[0].waterPool){
                 return false;
             }
