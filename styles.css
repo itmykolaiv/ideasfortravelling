@@ -155,3 +155,22 @@ section.content {
     float: left;
     width: 50%;
 }
+.privet {
+    font-size: x-large;
+    text-align: center;
+}
+.aboutUs {
+    font-size: large;
+    border: 5px cadetblue double;
+    padding: 15px;
+    width: 40%;
+    float: left;
+}
+.howToUse {
+    font-size: large;
+    border: 5px cadetblue double;
+    padding: 15px;
+    width: 40%;
+    margin-left: 65px;
+    float: left;
+}
