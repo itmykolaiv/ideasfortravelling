@@ -7,10 +7,11 @@
 var hotels = document.querySelector('#hotels');
 var list = document.querySelector('#list');
 document.querySelector('#filter-btn').addEventListener('click', function () {
-    var flag = false;
+    
     list.innerHTML = "";
     var hotels_filtered = filterHotels();
     hotels_filtered.forEach(function (element) {
+        var flag = false;
         var block = hotels.innerHTML;
         block = block.replace("{{name}}", element.name)
                 .replace("{{image}}", element.image)
