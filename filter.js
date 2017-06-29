@@ -70,7 +70,7 @@ function filterHotels() {
         }
         //стандартные удобства (часть телевизора-чекбокс)
         var tV = document.querySelectorAll('.tV:checked');
-        if (tV[0]!= undefined && tV[0].value == "tV"){
+        if (tV[0]!== undefined && tV[0].value == "tV"){
             if (!element.standardAmenities[0].tV){
                 return false;
             }
